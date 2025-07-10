@@ -1,4 +1,27 @@
+# 🚀 Terraform AWS Infrastructure Project 
+
+This project creates a basic AWS infrastructure using **Terraform**. It's written step-by-step with a clear structure, designed for beginners, and perfect for DevOps learners or resume portfolio projects.
+
+---
+
+## 🧠 What This Project Does
+
+Using Terraform, this project creates:
+
+1. ✅ A **Virtual Private Cloud (VPC)**
+2. ✅ Two **public subnets** in different availability zones
+3. ✅ An **Internet Gateway** for internet access
+4. ✅ A **Route Table** for outbound traffic
+5. ✅ A **Launch Template** for EC2 instances
+6. ✅ An **Application Load Balancer (ALB)** to distribute traffic
+7. ✅ A **Target Group** for ALB health checks
+8. ✅ An **Auto Scaling Group (ASG)** to scale EC2s automatically
+9. ✅ A **Remote backend** for Terraform using:
+   - **S3** (to store the `.tfstate` file)
+   - **DynamoDB** (to lock the state file)
+---
 📁 Project Structure Explained (What Each File/Folder Does)
+---
 ```bash
 terraform-project/
 ├── env/
@@ -23,28 +46,6 @@ terraform-project/
 │
 └── README.md                  <-- Main documentation for the project
 ```
-
-# 🚀 Terraform AWS Infrastructure Project 
-
-This project creates a basic AWS infrastructure using **Terraform**. It's written step-by-step with a clear structure, designed for beginners, and perfect for DevOps learners or resume portfolio projects.
-
----
-
-## 🧠 What This Project Does
-
-Using Terraform, this project creates:
-
-1. ✅ A **Virtual Private Cloud (VPC)**
-2. ✅ Two **public subnets** in different availability zones
-3. ✅ An **Internet Gateway** for internet access
-4. ✅ A **Route Table** for outbound traffic
-5. ✅ A **Launch Template** for EC2 instances
-6. ✅ An **Application Load Balancer (ALB)** to distribute traffic
-7. ✅ A **Target Group** for ALB health checks
-8. ✅ An **Auto Scaling Group (ASG)** to scale EC2s automatically
-9. ✅ A **Remote backend** for Terraform using:
-   - **S3** (to store the `.tfstate` file)
-   - **DynamoDB** (to lock the state file)
 
 ---
 
@@ -74,6 +75,9 @@ terraform-project/
 │
 └── README.md                  # 📘 This documentation file
 ```
+## 📈 Architecture Diagram
+![Terraform AWS Architecture](./assets/aws-diagram.png)
+
 ---
 ⚙️ Requirements
 --- 
@@ -180,7 +184,9 @@ Note
 ---
 
 Aniruddha Kharve
+
 Aspiring DevOps & Cloud Engineer | Terraform + AWS Enthusiast
+
 GitHub: Aniruddhakharve
 
 ---

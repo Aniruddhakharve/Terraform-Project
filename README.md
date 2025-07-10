@@ -94,7 +94,7 @@ terraform-project/
 
 1️⃣ Clone the Repo
 ```bash
-git clone https://github.com/<your-username>/terraform-project.git
+git clone https://github.com/Aniruddhakharve/terraform-project.git
 cd terraform-project/env/dev
 ```
 
